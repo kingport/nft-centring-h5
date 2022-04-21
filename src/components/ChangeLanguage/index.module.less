@@ -1,0 +1,40 @@
+@import "../../common/scss/common.scss";
+
+.popupContainer {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  .popupHeader {
+    color: #183b5b;
+    height: 1.28rem;
+    // font-size: $font-size-md;
+    padding: 0 0.6rem;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 0.4rem;
+      height: 0.4rem;
+    }
+  }
+  .popupContent {
+    height: 100%;
+    overflow-y: scroll;
+    // text-align: center;
+    padding: 0 0.6rem 0;
+  }
+  .selectLang {
+    height: 1.38rem;
+    // font-size: $font-size-xs;
+    color: #4e6585;
+    border-bottom: 1px solid #f0f4f5;
+    &:last-child {
+      border-bottom: 0;
+    }
+    img {
+      width: 0.32rem;
+      height: 0.32rem;
+    }
+  }
+}

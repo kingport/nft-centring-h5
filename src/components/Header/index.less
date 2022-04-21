@@ -1,0 +1,51 @@
+@import "../../common/less/common.less";
+
+:global {
+  .nav {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0 16px;
+    height: 44px;
+    font-size: 16px;
+    font-weight: bold;
+    z-index: 99;
+    & > div {
+      flex: 1;
+      img {
+        width: 16px;
+        height: 16px;
+      }
+      &.title {
+        text-align: center;
+      }
+      &.right {
+        div {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+          margin-left: auto;
+          width: 72px;
+          height: 26px;
+          // border: 0.5px solid rgba(151, 151, 151, 0.201002);
+          border-radius: 13px;
+          text-align: right;
+          font-weight: bold;
+          .more {
+            width: 20px;
+            height: 16px;
+          }
+          span {
+            margin: 0 9px;
+            width: 1px;
+            height: 15px;
+            background: rgba(0, 0, 0, 0.198907);
+            opacity: 0.2;
+          }
+        }
+      }
+    }
+  }
+}

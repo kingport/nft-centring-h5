@@ -1,0 +1,36 @@
+@import "../../common/less/common.less";
+
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 28px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(170.29deg, #009ecf -44.53%, #005c9d 72.97%);
+  color: @text-color-inverse;
+  img {
+    width: 100px;
+    height: 71px;
+  }
+  h1 {
+    margin: 27px 0 14px;
+    font-size: @font-size-18;
+    line-height: 14px;
+  }
+  p {
+    opacity: 0.5;
+  }
+  .btnWrap {
+    position: absolute;
+    bottom: 48px;
+    padding: 0 28px;
+    width: 100%;
+    .btn {
+      --border-width: 0;
+      --text-color: @text-color-inverse;
+      font-size: @font-size-lg;
+    }
+  }
+}

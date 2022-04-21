@@ -1,0 +1,58 @@
+@import "../../../../common/less/common.less";
+
+.container {
+  padding: 20px 16px 48px;
+  h2 {
+    span {
+      margin-right: 10px;
+      width: 24px;
+      height: 24px;
+      background-color: @primary-color;
+      border-radius: 50%;
+      img {
+        width: 14px;
+        height: 10px;
+      }
+    }
+    font-size: @font-size-16;
+    color: @text-color;
+  }
+
+  .desc {
+    margin-top: 36px;
+    font-size: @font-size-lg;
+    color: @text-color-secondary;
+  }
+  .email {
+    margin: @margin-lg 0 @margin-14;
+    padding: @padding-14;
+    height: 52px;
+    border-radius: @border-radius-base;
+    background-color: @white;
+    color: @text-color;
+    font-weight: bold;
+    img {
+      margin-right: @margin-10;
+      width: 24px;
+      height: 24px;
+    }
+  }
+  .txt {
+    line-height: 18px;
+    color: @text-color;
+  }
+  .btnWrap {
+    margin-top: 36px;
+    button {
+      flex: 1;
+      font-size: @font-size-lg;
+      color: @text-color-inverse;
+      &:first-child {
+        color: @text-color-secondary-tip;
+      }
+      &:last-child {
+        margin-left: 15px;
+      }
+    }
+  }
+}

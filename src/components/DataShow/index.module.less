@@ -1,0 +1,31 @@
+@import "../../common/scss/common.scss";
+
+.popupContainer {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  .popupHeader {
+    flex-shrink: 0;
+    padding: 0 0.6rem;
+    height: 1.28rem;
+    // font-size: $font-size-xs;
+    color: #183b5b;
+  }
+  .popupContent {
+    overflow-y: scroll;
+    flex: 1;
+    padding: 0 0.6rem 0.3rem;
+    p {
+      height: 1.2rem;
+      // color: $text-color;
+      border-bottom: 1px solid #f0f4f5;
+      &:first-child {
+        height: 1.12rem;
+      }
+      span:first-child {
+        // color: $text-color-secondary;
+      }
+    }
+  }
+}
